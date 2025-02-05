@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmarScan Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>SmarScan Assistant</h1>
+        
+        <div class="scanner-container">
+            <div id="interactive" class="viewport">
+                <div class="scanning-animation" id="scanningAnimation"></div>
+                <img src="" alt="Product Image" class="product-image" id="productImage">
+            </div>
+            <p class="status-message" id="statusMessage">Press 'Start Scanner' to begin</p>
+            <button id="startButton">Start Scanner</button>
+            <button id="stopButton" style="display: none; background-color: #f44336;">Stop Scanner</button>
+        </div>
+
+        <div class="product-info">
+            <h2>Product Information</h2>
+            <div id="productDetails">
+                <p id="productName">Name: </p>
+                <p id="productPrice">Price: </p>
+                <p id="productExpiry">Expiration Date: </p>
+                <p id="productInstructions">Usage Instructions: </p>
+                <p id="productAllergies">Allergies: </p>
+            </div>
+            <button id="readAloud">Read Aloud</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
